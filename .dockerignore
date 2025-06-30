@@ -1,0 +1,30 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore common virtual environments
+venv/
+env/
+finalenv/
+ttsvenv/
+
+# Ignore model folders
+vits/
+fairseq/
+
+# Ignore system-specific or temp files
+*.tar
+*.zip
+*.ckpt
+*.pt
+*.pkl
+*.h5
+*.log
+*.tmp
+*.bak
+
+# Ignore pip cache and model caches
+.cache/
+.local/
+__pycache__/

@@ -1,0 +1,30 @@
+%pwd
+!git clone https://github.com/jaywalnut310/vits.git
+!python --version
+%cd vits/
+
+!pip install Cython
+!pip install librosa==0.8.0
+!pip install phonemizer==2.2.1
+!pip install scipy
+!pip install numpy
+!pip install torch
+!pip install torchvision
+!pip install matplotlib
+!pip install Unidecode==1.1.1
+
+%cd monotonic_align/
+%mkdir monotonic_align
+!python3 setup.py build_ext --inplace
+%cd ../
+%pwd
+
+# To run the VITS model, you need to set the PYTHONPATH to include the vits directory.:
+# fIRST CHANGE DIRECTORY TO vits
+# 1. cd D:\Rippleberry\ttsbackend\vits
+# Next for Linux, you can run the following command in your terminal:
+# 2. PYTHONPATH=$PYTHONPATH:D:\Rippleberry\ttsbackend\vits python ../main.py FOR LINUX
+# 3. python ../main.py
+# And for Windows, you can use the following command in PowerShell:
+# 2. $env:PYTHONPATH += ";D:\Rippleberry\ttsbackend\vits"
+# 3. python ../main.py
