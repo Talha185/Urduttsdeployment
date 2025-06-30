@@ -27,4 +27,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: talha185/urdutts-deployment:latest
+        tags: talha185/urdutts:latest
